@@ -1,6 +1,6 @@
 package user;
 /*
-класс содердит поля - данные пользователя
+класс содержит поля - данные пользователя
  */
 public class User implements IUser{
     private String name;

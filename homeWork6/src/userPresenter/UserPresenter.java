@@ -1,52 +1,39 @@
 package userPresenter;
 
-import user.IUser;
-import user.User;
-import userView.*;
+/*
+Класс для управления методами взаимодействия между Viue и User. Для расширения приложения класс подлежит дополнению
+ */
+public  class UserPresenter implements IPresenter{
+    private IPresenterRegisterUser registerUser;
+    private IPresenterLogIn logIn;
+    private IPresenterShowUser showUser;
+    private IPresenterChangePassword changePassword;
 
-
-public class UserPresenter {
-    private IUser user;
-    private View view;
-
-    public UserPresenter(User user, View view) {
-        this.user = user;
-        this.view = view;
-
+    public UserPresenter(IPresenterRegisterUser registerUser, IPresenterLogIn logIn, IPresenterShowUser showUser, IPresenterChangePassword changePassword) {
+        this.registerUser = registerUser;
+        this.logIn = logIn;
+        this.showUser = showUser;
+        this.changePassword = changePassword;
     }
 
-    public void registerUser() {
-        String[] regData = view.registerForm();           // registerForm()
-        user.setName(regData[0]);
-        user.setLogin(regData[1]);
-        user.setPassword(regData[2]);
-        user.setIsLogged(true);
-    }
 
-    public void logIn() {
-        if (view.logInForm(user.getLogin(), user.getPassword())) {
-            user.setIsLogged(true);
-            view.showString("you are logged");
-            showUser();
-        } else {
-            view.showString("invalid username or password");
-        }
-    }
-
-    public void showUser() {
-        String out;
-        if (user.getIsLogged()) {
-            out = String.format("Name: %s, Login: %s, Password: %s.",
-                    user.getName(), user.getLogin(), user.getPassword());
-        } else {
-            out = "first, register or log in";
-        }
-        view.showString(out);
-    }
-
+    @Override
     public void changePassword() {
-        if (user.getIsLogged()) {
-            user.setPassword(view.changePasswordForm(user.getPassword()));
-        }
+        changePassword.changePassword();
+    }
+
+    @Override
+    public void logIn() {
+        logIn.logIn();
+    }
+
+    @Override
+    public void registerUser() {
+        registerUser.registerUser();
+    }
+
+    @Override
+    public void showUser() {
+        showUser.showUser();
     }
 }

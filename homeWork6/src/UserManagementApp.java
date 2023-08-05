@@ -1,6 +1,6 @@
 import user.IUser;
 import user.User;
-import userPresenter.UserPresenter;
+import userPresenter.*;
 import userView.*;
 
 import java.util.Scanner;
@@ -21,7 +21,6 @@ public class UserManagementApp {
             switch (choice) {
                 case 1:
                     presenter.registerUser();
-
                     break;
                 case 2:
                     presenter.showUser();
@@ -41,8 +40,16 @@ public class UserManagementApp {
         }
     }
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args) {                        // 2. •	O: Open-Closed Principle - соблюдается,
+                                                                    // как во View, так и в Presenter.
+                                                                    // изменение наследованием = изменение функционала
+                                                                    // действий с USER или других категорий USER.
+                                                                    // дописать другие классы "по образцу и подобию" =
+                                                                    // расширить функционал работы с USER/
+                                                                    // Не справедливо только для ViewRegister.
+                                                                    // Для соответствия - нужен новый другой User
+                                                                    // и изменение функционала и типа возвращаемых
+                                                                    //  данных в ViewRegister.
         User user = new User();
         IViewBase register = new ViewRegister();                    //  1 •	S: Single Responsibility Principle
                                                                     // каждый класс решает одну задачу (вместо методов
@@ -50,12 +57,24 @@ public class UserManagementApp {
 
         IViewBase changePassw = new ViewChangePassw();              //  3 •	L: Liskov Substitution Principle
                                                                     // создание разных классов от одного общего
-        IViewBase logIn = new ViewLogIn();                          //
+        IViewBase logIn = new ViewLogIn();                          // - полностью выполняется только во View, а в
+                                                                    // Presenter - только классы действий - от одного
+                                                                    // общего интерфейса, но экземпляры от него
+                                                                    // не создаются.
         View view = new View(register, changePassw, logIn);         //  4 • I: Interface Segregation Principle
                                                                     // клиент вполне может что - либо из интерфейсов
                                                                     // не использовать, либо использовать напрямую
-        UserPresenter presenter = new UserPresenter(user, view);
+        IPresenterRegisterUser presenterRegister = new PresenterRegisterUser(user, view);
+                                                                    // 5 •D: Dependency Inversion Principle
+                                                                    // во View выполняется полностью, в Presenter -
+                                                                    // меньше, можно считать, что не выполняется вовсе.
+        IPresenterLogIn presenterLogIn =  new PresenterLogIn(user, view);
+        IPresenterShowUser presenterShowUser =  new PresenterShowUser(user, view);
+        IPresenterChangePassword presenterChangePassword = new PresenterChangePassword(user, view);
+        UserPresenter presenter = new UserPresenter(presenterRegister, presenterLogIn,
+                presenterShowUser, presenterChangePassword);
 
+//        presenterChangePassword.changePassword();
         onAddButtonClicked(presenter);
     }
 }
