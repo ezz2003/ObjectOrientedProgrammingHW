@@ -1,0 +1,188 @@
+авг. 10, 2023 8:28:42 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 8:28:54 AM calcPresenter.Presenter add
+INFO: Testing LOG 1
+авг. 10, 2023 8:32:24 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 8:32:36 AM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 8:46:32 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 8:46:42 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 8:46:42 AM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 8:46:42 AM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 8:59:33 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 8:59:43 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 8:59:43 AM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 8:59:43 AM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 8:59:49 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 8:59:49 AM complexNumber.SubComplexNumbers sub
+INFO: running SUB: (1,00 + 2,00i) - (3,00 + 4,00i)= -2,00 + -2,00i
+авг. 10, 2023 9:09:54 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 9:10:09 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 9:10:09 AM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 10, 2023 9:12:38 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 9:12:52 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 9:12:52 AM complexNumber.DivideComplexNumber div
+INFO: running DIV: (1,00 + 2,00i) / (3,00 + 4,00i)= 0,44 + 0,08i
+авг. 10, 2023 9:42:26 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 9:42:37 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 9:42:37 AM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 10, 2023 9:45:20 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 9:46:04 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 9:46:37 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 9:46:37 AM complexNumber.SubComplexNumbers sub
+INFO: running SUB: (2,00 + 3,00i) - (4,00 + 5,00i)= -2,00 + -2,00i
+авг. 10, 2023 9:46:48 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 9:46:48 AM ComplexCalcManagementApp onAddButtonClicked
+WARNING: Invalid command
+авг. 10, 2023 12:53:04 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 12:53:04 PM ComplexCalcManagementApp main
+SEVERE: an exception was thrown
+java.lang.Exception: java.lang.Exception
+	at ComplexCalcManagementApp.main(ComplexCalcManagementApp.java:70)
+Caused by: java.lang.Exception
+	at ComplexCalcManagementApp.main(ComplexCalcManagementApp.java:69)
+
+авг. 10, 2023 1:54:07 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 1:54:07 PM ComplexCalcManagementApp main
+SEVERE: an exception was thrown
+java.lang.Exception: java.lang.Exception
+	at ComplexCalcManagementApp.main(ComplexCalcManagementApp.java:70)
+Caused by: java.lang.Exception
+	at ComplexCalcManagementApp.main(ComplexCalcManagementApp.java:69)
+
+авг. 10, 2023 1:54:13 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 1:54:13 PM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 1:54:13 PM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 1:54:38 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 1:54:47 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 1:54:47 PM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 1:54:47 PM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 2:22:04 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 2:22:15 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 2:22:15 PM complexNumber.DivideComplexNumber div
+INFO: running DIV: (1,00 + 2,00i) / (3,00 + 4,00i)= 0,44 + 0,08i
+авг. 10, 2023 2:23:54 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 2:26:21 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 2:31:38 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 2:31:49 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 2:31:49 PM complexNumber.DivideComplexNumber div
+INFO: running DIV: (1,00 + 2,00i) / (3,00 + 4,00i)= 0,44 + 0,08i
+авг. 10, 2023 2:31:57 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 2:31:57 PM ComplexCalcManagementApp onAddButtonClicked
+WARNING: Invalid command
+авг. 10, 2023 2:32:06 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 2:32:06 PM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 10, 2023 3:30:05 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 3:30:27 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 3:35:44 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 3:36:02 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 3:36:10 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 3:36:10 PM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 3:36:10 PM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 3:41:22 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 3:41:43 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 3:41:43 PM complexNumber.AddComplexNumbers add
+INFO: running ADD: (2,30 + 3,50i) + (5,60 + 2,80i)= 7,90 + 6,30i
+авг. 10, 2023 3:41:43 PM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 4:43:38 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 4:43:49 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 4:43:49 PM complexNumber.SubComplexNumbers sub
+INFO: running SUB: (1,00 + 2,00i) - (3,00 + 4,00i)= -2,00 + -2,00i
+авг. 10, 2023 4:45:04 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 4:45:14 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 4:45:14 PM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 10, 2023 4:45:14 PM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
+авг. 10, 2023 4:50:50 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 4:51:00 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 4:51:00 PM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 10, 2023 4:51:22 PM ComplexCalcManagementApp main
+INFO: Start main
+авг. 10, 2023 4:51:31 PM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 10, 2023 4:51:31 PM complexNumber.DivideComplexNumber div
+INFO: running DIV: (1,00 + 2,00i) / (3,00 + 4,00i)= 0,44 + 0,08i
+авг. 11, 2023 8:47:53 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 11, 2023 8:48:06 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 11, 2023 8:48:06 AM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 11, 2023 9:14:39 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 11, 2023 9:14:50 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 11, 2023 9:14:50 AM complexNumber.DivideComplexNumber div
+INFO: running DIV: (1,00 + 2,00i) / (3,00 + 4,00i)= 0,44 + 0,08i
+авг. 11, 2023 10:16:06 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 11, 2023 10:16:15 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 11, 2023 10:16:15 AM complexNumber.MultiplyComplexNumbers mult
+INFO: running MULT: (1,00 + 2,00i) * (3,00 + 4,00i)= -5,00 + 10,00i
+авг. 11, 2023 10:20:10 AM ComplexCalcManagementApp main
+INFO: Start main
+авг. 11, 2023 10:20:32 AM calcPresenter.PresenterMakeRequest presenterMakeRequest
+INFO: Request created
+авг. 11, 2023 10:20:32 AM complexNumber.AddComplexNumbers add
+INFO: running ADD: (1,00 + 2,00i) + (3,00 + 4,00i)= 4,00 + 6,00i
+авг. 11, 2023 10:20:32 AM calcPresenter.Presenter add
+INFO: Addressing the class Action(add)
